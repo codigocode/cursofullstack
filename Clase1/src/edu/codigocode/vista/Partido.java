@@ -1,5 +1,6 @@
 package edu.codigocode.vista;
 
+import edu.codigocode.modelo.Consumer;
 import edu.codigocode.modelo.Jugador;
 import edu.codigocode.modelo.Referi;
 
@@ -66,7 +67,16 @@ public class Partido {
 		ref1.cobrarFalta("roja", j1);
 		
 		
+		Consumer<String> c1 =  s -> System.out.println("C1 " + s);
+		Consumer<String> c2 =  s -> System.out.println("C2 " + s);
 		
+		Consumer<String> c3 =  s -> {
+			c1.accept(s);
+			c2.accept(s);
+		};
+		
+		c3.accept("hola mundo");
+
 		
 		
 
