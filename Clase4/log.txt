@@ -1,0 +1,1 @@
+Hubo un error porque tenemos un objeto null, supongo que es en la linea 27Otr tipo de mensajeOtr tipo de mensajeOtr tipo de mensajeOtro tipo de mensaje Thu Feb 06 21:07:53 ART 2020
