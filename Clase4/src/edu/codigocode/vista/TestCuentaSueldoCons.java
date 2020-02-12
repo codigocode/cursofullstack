@@ -1,6 +1,7 @@
 package edu.codigocode.vista;
 
 import java.util.Date;
+import java.util.function.Consumer;
 
 import edu.codigocode.controlador.Persona;
 import edu.codigocode.file.GuardarError;
@@ -41,6 +42,15 @@ public class TestCuentaSueldoCons {
 			//e.printStackTrace();
 		}
 		System.out.println("FIN PROGRAMA!");
+		
+		Consumer<String> c1 = s->System.out.println("c1 " + s);
+		Consumer<String> c2 = s->System.out.println("c2 " + s);
+		
+		
+		Consumer<String> c3 = c1.andThen(c2);
+		
+		c3.accept("hola mundo");
+//		System.out.println("fin");
 	}
 
 }
