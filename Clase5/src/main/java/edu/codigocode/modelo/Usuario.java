@@ -2,9 +2,18 @@ package edu.codigocode.modelo;
 
 public class Usuario {
 
+	private int id;
 	private String nombre;
 	private String mail;
 	private String password;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getNombre() {
 		return nombre;
